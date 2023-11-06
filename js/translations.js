@@ -60,7 +60,7 @@ var translations = {
         "pt": "Quem somos nós?"
     },
     "15years": {
-        "es": "Con mas de 15 años en el Mercado costarricense, nuestra compañia ha servido a nuestros clientes como un socio comercial experimentado, entregando calidad y personalización. Hemos desarrollado nuestros negocios y aumentado nuestros clientes. Nuestro negocio principal consta de una gran flota de camiones con diferentes capacidades de carga.",
+        "es": "Con más de 15 años en el Mercado costarricense, nuestra compañía ha servido a nuestros clientes como un socio comercial experimentado, entregando calidad y personalización. Hemos desarrollado nuestros negocios y aumentado nuestros clientes. Nuestro negocio principal consta de una gran flota de camiones con diferentes capacidades de carga.",
         "en": "With more than 15 years in the Costa Rican market, our company has served our customers as an experienced business partner, delivering quality and customization. We have developed our business and increased our customers. Our core business consists of a large fleet of trucks with different load capacities.",
         "pt": "Com mais de 15 anos no mercado da Costa Rica, a nossa empresa tem servido os nossos clientes como um parceiro de negócios experiente, oferecendo qualidade e personalização. Desenvolvemos o nosso negócio e aumentámos os nossos clientes. A nossa atividade principal consiste numa grande frota de camiões com diferentes capacidades de carga."
     },
@@ -145,7 +145,7 @@ var translations = {
         "pt": "Serviço de correio"
     },
     "fleet": {
-        "es": "Mantenimiento de flotas vehículares",
+        "es": "Mantenimiento de flotas vehiculares",
         "en": "Vehicle fleet maintenance",
         "pt": "Manutenção da frota de veículos"
     },
@@ -180,7 +180,7 @@ var translations = {
         "pt": "Distribuição segura"
     },
     "preserve": {
-        "es": "Tomamos todas las medidas de seguridad necesaria para preservar el buen estado de los productos transportados.",
+        "es": "Tomamos todas las medidas de seguridad necesarias para preservar el buen estado de los productos transportados.",
         "en": "We take all the necessary safety measures to preserve the good condition of the transported products.",
         "pt": "Tomamos todas as medidas de segurança necessárias para preservar o bom estado dos produtos transportados."
     },
