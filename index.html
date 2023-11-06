@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>JMA Logistica</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/translations.js"></script>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-primary position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span data-translation-key="loading" class="sr-only" id="loading">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a href="index.html" class="navbar-logo"><img src="img/logo.png" alt="logo" class="img-fluid"></a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a data-translation-key="home" id="home" href="index.html" class="nav-item nav-link active" style="color: white;">Inicio</a>
+                <a data-translation-key="aboutus" id="aboutus" href="about.html" class="nav-item nav-link" style="color: white;">Sobre nosotros</a>
+                <a data-translation-key="service" id="service" href="service.html" class="nav-item nav-link" style="color: white;">Servicios</a>
+                <a data-translation-key="contactus" id="contactus" href="contact.html" class="nav-item nav-link" style="color: white;">Contáctenos</a>
+                <a data-translation-key="track" id="track" href="tracking.html" class="nav-item nav-link" style="color: white;">Rastrea tu pedido</a>
+                
+            </div>
+            <img src="img/costa-rica.png" class="img-bandera" style= "margin-left: 25px;" style="cursor: pointer;" id="spanish-flag"  alt="Español">
+            <img src="img/estados-unidos.png" class="img-bandera" style=" margin-left: 20px;" style="cursor: pointer;" id="english-flag" alt="English">
+            <img src="img/brasil.png" class="img-bandera" style="margin-right: 25px; margin-left: 20px;" style="cursor: pointer;" id="portuguese-flag" alt="Portuguese">
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 style="color: transparent;">a</h5>
+                                <h1 data-translation-key="centerinthe" class="display-3 text-white animated slideInDown mb-4" id="centerinthe">Centrarnos en el cliente</h1>
+                                <a data-translation-key="track" id="track" href="tracking.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Rastrea tu pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 style="color: transparent;">a</h5>
+                                <h1 data-translation-key="learn" id="learn" class="display-3 text-white animated slideInDown mb-4">Aprender rápido y adaptarse al cambio</h1>
+                                <a data-translation-key="track" id="track" href="tracking.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Rastrea tu pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 style="color: transparent;">a</h5>
+                                <h1 data-translation-key="work" id="work" class="display-3 text-white animated slideInDown mb-4">Trabajar en equipo para ganar</h1>
+                                <a data-translation-key="track" id="track" href="tracking.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Rastrea tu pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 style="color: transparent;">a</h5>
+                                <h1 data-translation-key="impulse" id="impulse" class="display-3 text-white animated slideInDown mb-4">Impulsar resultados con rapidez y responsabilidad</h1>
+                                <a data-translation-key="track" id="track" href="tracking.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Rastrea tu pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 style="color: transparent;">a</h5>
+                                <h1 data-translation-key="operational" id="operational" class="display-3 text-white animated slideInDown mb-4">Excelencia operacional</h1>
+                                <a data-translation-key="track" id="track" href="tracking.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Rastrea tu pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 data-translation-key="who" id="who" class="mb-5 text-secondary">¿Quiénes somos?</h1>
+                    <p data-translation-key="15years" id="15years" class="mb-5">Con mas de 15 años en el Mercado costarricense, nuestra compañia ha servido a nuestros clientes como un socio comercial experimentado, entregando calidad y personalización. Hemos desarrollado nuestros negocios y aumentado nuestros clientes. Nuestro negocio principal consta de una gran flota de camiones con diferentes capacidades de carga.</p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-bullseye fa-3x text-primary mb-3"></i>
+                            <h5 data-translation-key="mission" id="mission">Misión</h5>
+                            <p data-translation-key="wework" id="wework" class="m-0">En Grupo Logistico JMA, trabajamos arduamente para dar como su proveedor de transporte y logística: seguridad en su carga, puntualidad, traslado personalizado de su producto, manejo y entrega de su producto y orientarnos al servicio de sus clientes.</p>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-eye fa-3x text-primary mb-3"></i>
+                            <h5 data-translation-key="vision" id="vision">Visión</h5>
+                            <p data-translation-key="bea" id="bea" class="m-0">Ser una compañía líder en el transporte de carga y logística de nuestros clientes por medio de eficientes maneras de transportar mercadería.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 data-translation-key="data" id="data" class="mb-5 text-secondary">Algunos datos sobre nosotros</h1>
+                    <p data-translation-key="weare" id="weare" class="mb-5">Somos una empresa de logística especializada en la consolidación y movimientos de carga. Nuestro objetivo es brindar soluciones integrales y eficientes para el transporte y almacenamiento de mercancías.</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-phone fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                        <div class="ps-4">
+                            <h6 style="color: transparent;">a</h6>
+                            <h6 data-translation-key="callus" id="callus">Llámanos para cualquier consulta</h6>
+                            <h3 class="text-primary m-0">+506 2240 0730</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-6">
+                            <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-users fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">10</h2>
+                                <p data-translation-key="clients" id="clients" class="text-white mb-0">Clientes</p>
+                            </div>
+                            <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-truck fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">134</h2>
+                                <p data-translation-key="vehicles" id="vehicles" class="text-white mb-0">Móviles</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-road fa-2x text-white mb-3"></i>
+                                <h2 class="text-white mb-2" data-toggle="counter-up">2000</h2>
+                                <p data-translation-key="kilometers" id="kilometers" class="text-white mb-0">Kilómetros</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 data-translation-key="ourservices" id="ourservices" class="mb-5 text-secondary">Nuestros servicios</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <h4 data-translation-key="landfreight" id="landfreight" class="mb-3">Transporte terrestre</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <h4 data-translation-key="bulkcargo" id="bulkcargo" class="mb-3">Carga seca</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <h4 data-translation-key="refrigeratedload" id="refrigeratedload" class="mb-3">Carga refrigerada</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <h4 data-translation-key="motorcycle" id="motorcycle" class="mb-3">Servicio de motocicletas</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <h4 data-translation-key="courierservice" id="courierservice" class="mb-3">Mensajería</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                        <h4 data-translation-key="fleet" id="fleet" class="mb-3">Mantenimiento de flotas vehículares</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container feature py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 data-translation-key="trustable" id="trustable" class="mb-5 text-secondary">Somos una empresa de logística de confianza</h1>
+                    <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <i class="fa fa-map text-primary fa-3x flex-shrink-0"></i>
+                        <div class="ms-4">
+                            <h5 data-translation-key="allcountry" id="allcountry">Servicio a todo el país</h5>
+                            <p data-translation-key="costarica" id="costarica" class="mb-0">Nos destacamos por brindar nuestro servicio de logística a todos los rincones de Costa Rica.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
+                        <div class="ms-4">
+                            <h5 data-translation-key="ontime" id="ontime">Entregas a tiempo</h5>
+                            <p data-translation-key="ourclients" id="ourclients" class="mb-0">Trabajamos en estrecha colaboración con nuestros clientes para garantizar la entrega puntual de sus productos.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                        <i class="fa fa-shield-alt text-primary fa-3x flex-shrink-0"></i>
+                        <div class="ms-4">
+                            <h5 data-translation-key="safe" id="safe">Distribución segura</h5>
+                            <p data-translation-key="preserve" id="preserve" class="mb-0">Tomamos todas las medidas de seguridad necesaria para preservar el buen estado de los productos transportados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+
+    <!-- Clients Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    
+                <h1 data-translation-key="clients" class="mb-5" style="color: #522D80;">Clientes</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/Caldic (1).png" alt="">
+                        </div>
+                        <h5 class="mb-0">Caldic</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/3M (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">3M</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/nutricare.jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Nutricare</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/rrd (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">RR Donnelley</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/veinsa motors (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Veinsa Motors</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/cummins (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Cummins</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/Firestone-Symbol (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Firestone</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/cofasa (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">COFASA</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/Cefa-Institucional-800 (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">CEFA</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="img/farmacia (1).jpg" alt="">
+                        </div>
+                        <h5 class="mb-0">Farmacia de Especialidades Hospitalarias</h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Clients End -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid custom-footer text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 data-translation-key="address" id="address" class="text-light mb-4">Dirección</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>San Isidro, Heredia, Costa Rica</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+506 2240 0730</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@grupologisticojma.com
+
+</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 data-translation-key="services" id="services" class="text-light mb-4">Servicios</h4>
+                    <a data-translation-key="landfreight" id="landfreight" class="btn btn-link" href="service.html">Transporte terrestre</a>
+                    <a data-translation-key="bulkcargo" id="bulkcargo" class="btn btn-link" href="service.html">Carga seca</a>
+                    <a data-translation-key="refrigeratedload" id="refrigeratedload" class="btn btn-link" href="service.html">Carga refrigerada</a>
+                    <a data-translation-key="motorcycle" id="motorcycle" class="btn btn-link" href="service.html">Servicio de motocicletas</a>
+                    <a data-translation-key="courierservice" id="courierservice" class="btn btn-link" href="service.html">Mensajería</a>
+                    <a data-translation-key="fleet" id="fleet" class="btn btn-link" href="service.html">Mantenimiento de flotas vehículares</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 data-translation-key="quicklinks" id="quicklinks" class="text-light mb-4">Enlaces rápidos</h4>
+                    <a data-translation-key="aboutus" id="aboutus" class="btn btn-link" href="about.html">Sobre nosotros</a>
+                    <a data-translation-key="ourservices" id="ourservices" class="btn btn-link" href="service.html">Nuestros servicios</a>
+                    <a data-translation-key="contactus" id="contactus" class="btn btn-link" href="contact.html">Contáctenos</a>
+                    <a data-translation-key="track" id="track" class="btn btn-link" href="tracking.html">Rastrea tu pedido</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 data-translation-key="socialnetworks" id="socialnetworks" class="text-light mb-4">Redes sociales</h4>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/GrupoLogisticoJMA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/grupologisticojma/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/grupo-logistico-jma/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a >JMA Logística S.A.</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end" style="color: transparent;">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a style="color: transparent;" href="https://htmlcodex.com">HTML Codex</a>
+                        </br>Distributed By <a style="color: transparent;" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+// Obtiene las imágenes y elementos que tienen data-translation-key
+var spanishFlag = document.getElementById("spanish-flag");
+var englishFlag = document.getElementById("english-flag");
+var portugueseFlag = document.getElementById("portuguese-flag"); // Nuevo elemento para portugués
+var elementsWithTranslationKey = document.querySelectorAll("[data-translation-key]");
+
+// Recupera el idioma almacenado en localStorage
+var currentLanguage = localStorage.getItem("preferredLanguage") || "es"; // Por defecto, español
+
+// Función para cambiar el idioma
+function changeLanguage(language) {
+    // Actualiza el idioma actual
+    currentLanguage = language;
+    
+    // Almacena el idioma en localStorage
+    localStorage.setItem("preferredLanguage", currentLanguage);
+
+    // Actualiza el contenido de los elementos con data-translation-key
+    elementsWithTranslationKey.forEach(function (element) {
+        var translationKey = element.getAttribute("data-translation-key");
+        element.textContent = translations[translationKey][currentLanguage];
+    });
+}
+
+// Agrega controladores de eventos a las imágenes para cambiar el idioma
+spanishFlag.addEventListener("click", function () {
+    changeLanguage("es");
+});
+
+englishFlag.addEventListener("click", function () {
+    changeLanguage("en");
+});
+
+portugueseFlag.addEventListener("click", function () {
+    changeLanguage("pt"); // Cambia al idioma portugués
+});
+
+// Llama a la función para establecer el idioma inicial (por ejemplo, español)
+changeLanguage(currentLanguage);
+
+    </script>
+</body>
+
+</html>
